@@ -1,0 +1,10 @@
+sprite draw square
+	repeat 4
+		draw line 100
+		turn 90
+	sprite register square
+end
+
+if key <left, right, up, down>=true
+	move [square] 1 <key-pressed>
+end
